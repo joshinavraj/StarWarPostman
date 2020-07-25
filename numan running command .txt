@@ -1,0 +1,14 @@
+for running in cmd
+newman run <jsonFileLocation> -e <environmentFile>
+for html report(must have install newman-reporter-html) , install by npm install -g newman-reporter-html
+
+run newman for getting html report in the same directory (command "npm install -g newman-reporter-html")
+newman run <jsonFileLocation> -r html
+
+other type of report html extra(command "npm install -g newman-reporter-htmlextra")
+newman run <jsonFileLocation> -r htmlextra
+
+for running jenkins(it is at my folder "C:\Navraj\Jenkins") to run use command "java -jar jenkins.war" 
+and if there is encoding problem than use command "java -Dfile.encoding=UTF-8 -jar jenkins.war"
+
+or normal run jenkins.war and write command "newman run <jsonFileLocation>/shareURL --disable-unicode(for removing formatting problem)
