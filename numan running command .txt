@@ -13,3 +13,5 @@ for running jenkins(it is at my folder "C:\Navraj\Jenkins") to run use command "
 and if there is encoding problem than use command "java -Dfile.encoding=UTF-8 -jar jenkins.war"
 
 or normal run jenkins.war and write command "newman run <jsonFileLocation>/shareURL --disable-unicode(for removing formatting problem)
+
+//for tarvers
