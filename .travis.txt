@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- "10.15.0"
+
+install:
+- npm install newman
+
+before_script:
+- node --version
+- npm --version
+- C:/Users/navra/OneDrive/Desktop/newmanReports --version
+
+script:
+- C:/Users/navra/OneDrive/Desktop/newmanReports run tests/StarWarApiTest.json
