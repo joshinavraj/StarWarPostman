@@ -14,3 +14,4 @@ and if there is encoding problem than use command "java -Dfile.encoding=UTF-8 -j
 
 or normal run jenkins.war and write command "newman run <jsonFileLocation>/shareURL --disable-unicode(for removing formatting problem)
 
+test
