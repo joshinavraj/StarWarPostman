@@ -1,4 +1,5 @@
 for running in cmd
+
 newman run <jsonFileLocation> -e <environmentFile>
 for html report(must have install newman-reporter-html) , install by npm install -g newman-reporter-html
 
