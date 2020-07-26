@@ -1,0 +1,27 @@
+{
+  "name": "loyaltitest",
+  "version": "1.0.0",
+  "description": "Node project to store postman collection of starwar api for interview demonstration",
+   "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "api-tests": "newman run tests/StarWarApiTest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshinavraj/StarWarPostman.git"
+  },
+  "keywords": [
+    "Postman",
+    "CI"
+  ],
+  "author": "Nava Raj Joshi",
+   "bugs": {
+    "url": "https://github.com/joshinavraj/StarWarPostman/issues"
+  },
+  "homepage": "https://github.com/joshinavraj/StarWarPostman#readme",
+  "dependencies": {
+    "newman": "^5.1.2"
+  }
+}
