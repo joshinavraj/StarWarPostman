@@ -14,4 +14,23 @@ and if there is encoding problem than use command "java -Dfile.encoding=UTF-8 -j
 
 or normal run jenkins.war and write command "newman run <jsonFileLocation>/shareURL --disable-unicode(for removing formatting problem)
 
-test
+
+
+pipeline {
+   agent any
+
+   stages {
+      stage('Postman CI') {
+         steps {
+           git 'https://github.com/joshinavraj/postman-starwar-jenkins.git'
+             bat 'npm install'
+             bat 'npm run api-tests'
+             
+         }
+         
+      }
+   }
+}
+
+
+WorkflowScript: 12: Expected a stage @ line 12, column 7.
